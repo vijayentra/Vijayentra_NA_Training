@@ -18,5 +18,5 @@ public class ArmstrongNumber {
 			System.out.print(i+ " ");
 		}
 	}
-}
 
+}
