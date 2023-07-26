@@ -1,0 +1,19 @@
+package com.corejava.a2;
+
+public class OrgHierarchy{
+
+	public static void main(String[] args) {
+			Employee[] employee=new Employee[3];
+			employee[0]= new Employee("Khan",500000);
+			employee[1]= new Manager("Amit",1000000,200000);
+			employee[2]= new Labour("Khan",500000,50000);
+			double total_salary=0;
+			for(Employee e : employee) {
+				System.out.println(employee.toString());
+				total_salary += e.Salary();
+			}
+			System.out.println("total salary : "+ total_salary);
+		}
+}
+
+

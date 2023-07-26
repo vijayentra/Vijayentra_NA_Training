@@ -1,0 +1,14 @@
+package com.corejava.a2;
+ 
+public class Manager extends Employee{
+	double incentive;
+	public Manager(String emp_name, double salary, double incentive) {
+		super(emp_name, salary);
+		incentive = this.incentive;
+	}	
+	
+	public double Salary() {
+		return super.Salary()+incentive;
+	}
+	
+}

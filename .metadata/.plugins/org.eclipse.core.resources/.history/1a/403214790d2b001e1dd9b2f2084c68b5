@@ -1,0 +1,26 @@
+package com.corejava.a2;
+
+public class Employee {
+	String emp_name;
+	String role;
+	double salary;
+	
+	public Employee(String emp_name,double salary) {
+		emp_name=this.emp_name;
+		salary = this.salary;
+		}
+	public double Salary() {
+		return salary;
+	}
+	
+	public static void main(String[] args) {
+		Employee[] employee=new Employee[2];
+		employee[0]= new Manager("Amit",100000,200000);
+		employee[1]= new Labour("Khan",500000,50000);
+		double total_salary;
+		for(Employee e : employee) {
+			total_salary+=employee.Salary();
+		}
+		System.out.println("total salary : "+ total_salary);
+	}
+}
