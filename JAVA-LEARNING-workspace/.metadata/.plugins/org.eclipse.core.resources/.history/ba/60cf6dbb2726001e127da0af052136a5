@@ -1,0 +1,36 @@
+package Day1;
+import java.util.*;
+public class MagicNumber {
+	static boolean MN1(int n){
+		int r,temp,sum1=0,sum2=0;
+		temp=n;
+		while(temp>0) {
+			r=temp%10;
+			sum1+=r;          //sum1 = sum of the digits
+			temp=temp/10;
+		}
+		int temp2=sum1;
+		while(temp2>0) {
+			r=temp2%10;
+			sum2= sum2*10 + r;     // reverse of the sum of 'n'
+			temp2=temp2/10;
+		}
+		System.out.println(sum1);
+		System.out.println(sum2);
+		if(sum1*sum2==n)
+			return true;
+		return false;
+		
+	}
+	public static void main(String[] args) {
+		int n;
+		System.out.print("enter a number : ");
+		Scanner sc = new Scanner(System.in);
+		n = sc.nextInt();
+		if(MN1(n))
+			System.out.println("magic number");
+		else
+			System.out.println("not a magic number");
+	}
+
+}

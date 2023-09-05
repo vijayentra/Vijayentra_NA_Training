@@ -1,0 +1,22 @@
+package Day1;
+
+import java.util.*;
+public class SortArrayOfString {
+//	String Sort(String[] str) {
+//		return ;
+//	}
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("enter the size of the array : ");
+	int n = sc.nextInt();
+	String[] str = new String[n];
+	System.out.print("enter the elements of the array : ");
+	for(int i=0;i<n;i++) {
+		str[i]=sc.next();
+	}
+	for(String a : str) {
+		System.out.print(a+ " ");
+	}
+	}
+
+}

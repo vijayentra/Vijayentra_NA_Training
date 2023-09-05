@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+<!-- fill the code -->
+<bean id="staffObj" class="com.spring.app.Staff">
+        <constructor-arg value="1"/>
+        <constructor-arg value="Ragul"/>
+        <constructor-arg value="CSE"/>
+        <constructor-arg value="9445543300"/>
+    </bean>
+ <bean id="staffObj2" class="com.spring.app.Staff">
+        <constructor-arg value="2"/>
+        <constructor-arg value= "Gokul"/>
+        <constructor-arg value="CSE"/>
+        <constructor-arg value="9445543333"/>
+    </bean>
+
+    <!-- Define Department bean with constructor injection -->
+    <bean id="departmentObj" class="com.spring.app.Department">
+        <constructor-arg value="123"/>
+        <constructor-arg>
+            <list>
+                <ref bean="staffObj"/>
+                <ref bean="staffObj2"/>
+            </list>
+        </constructor-arg>
+    </bean>
+  
+</beans>

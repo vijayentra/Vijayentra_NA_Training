@@ -1,0 +1,10 @@
+1686737193336	Rename package 'com.controller.Report'
+1686740989659	Delete element
+1686746508258	Rename compilation unit 'ReportSericeImpl.java'
+1686749133429	Rename type 'ReportRepository'
+1686807063496	Rename package 'com.report'
+1686807179129	Rename package 'com.report.controller'
+1686807199693	Rename package 'com.report.entity'
+1686807214698	Rename package 'com.report.repository'
+1686807228614	Rename package 'com.report.service'
+1686807243550	Rename package 'com.report.serviceimplementation'

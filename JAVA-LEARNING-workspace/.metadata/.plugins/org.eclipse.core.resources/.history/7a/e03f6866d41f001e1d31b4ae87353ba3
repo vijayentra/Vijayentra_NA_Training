@@ -1,0 +1,48 @@
+import java.util.Scanner;
+//class Area{	
+//	String name;
+//	int rollno;
+//}
+//
+//public class Practise extends Area{
+//
+//	public static void main(String[] args) {
+//		
+//		Practise s = new Practise();
+//		Practise students[] = new Practise[4];
+//		System.out.println(students.length);
+//		s.name="shambu";
+//		students[0]=s;
+//		System.out.println(students[0].name);
+//		
+		
+//		StringBuilder str = new StringBuilder();
+//		str.append("idigital");
+//		System.out.println(str);
+//		str.append("java");
+//		System.out.println(str);
+//		str.delete(8,12);
+//		System.out.println(str);
+//		str.append("nonfsdjava");
+//		str.insert(8, "nonfsd");
+//		System.out.println(str);
+		
+//	}
+//		}
+
+class Practise{
+	public static void main(String[] args) {
+		String name = new String("na");
+		
+		String n = "na";
+		String n2 = "na";
+		if(n2==name) {
+			System.out.println("hi");
+		}
+		else {
+			System.out.println("bye");
+		}
+		System.out.println(name.toUpperCase());
+		System.out.println(n.toUpperCase());
+	}
+}

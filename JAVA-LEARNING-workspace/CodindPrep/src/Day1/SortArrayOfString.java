@@ -1,0 +1,30 @@
+package Day1;
+
+import java.util.*;
+public class SortArrayOfString {
+	void Sort(String str[]) {
+		Arrays.sort(str);
+		for(String x : str) {
+			System.out.print(x+ " ");
+		}
+		System.out.println();
+	}
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.print("enter the size of the array : ");
+	int n = sc.nextInt();
+	String[] str = new String[n];
+	System.out.print("enter the elements of the array : ");
+	for(int i=0;i<n;i++) {
+		str[i]=sc.next();
+	}
+	System.out.println();
+	
+	SortArrayOfString s = new SortArrayOfString(); 
+	s.Sort(str);
+	String str2[] = {"ew","thtr","dwqe","frgw"};
+	s.Sort(str2);
+	System.out.println(str2[3]);
+}
+
+}
